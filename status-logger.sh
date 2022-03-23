@@ -9,8 +9,6 @@ Sc=$(date +%S)
 Ymd=$Y-$M-$D
 YmdHMS=$Y-$M-$D--$Hr:$Mn:$Sc
  
-GitRep="Seoul-Server-Status-log"
- 
 HomeDir="/home/aster1sk"
 GitDir="$HomeDir/Seoul-Server-Status-log"
 FileDir="$HomeDir/Seoul-Server-Status-log/$Ymd"
