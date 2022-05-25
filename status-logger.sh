@@ -8,7 +8,7 @@ Sc=$(date +%S)
 #Ym=$Y-$M
 Ymd=$Y-$M-$D
 YmdHMS=$Y-$M-$D--$Hr:$Mn:$Sc
- 
+  
 HomeDir="/home/aster1sk"
 GitDir="$HomeDir/Seoul-Server-Status-log"
 FileDir="$HomeDir/Seoul-Server-Status-log/$Ymd"
@@ -17,10 +17,12 @@ Diskuplog="$YmdHMS"-log.txt
 mkdir -p $FileDir
  
 echo "### $YmdHMS Status" >> $FileDir/$Diskuplog
-echo -----UPTIME----- >> $FileDir/$Diskuplog
+echo ----- UPTIME ----- >> $FileDir/$Diskuplog
 uptime >> $FileDir/$Diskuplog
-echo -----DISK LOG----- >> $FileDir/$Diskuplog
+echo ----- DISK LOG ----- >> $FileDir/$Diskuplog
 df -h >> $FileDir/$Diskuplog
+echo ----- ps -ef ----- >> $FileDir/$Diskuplog
+ps -ef >> $FileDir/$Diskuplog
  
 cd $GitDir
 git add .
