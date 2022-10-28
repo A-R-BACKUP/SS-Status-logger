@@ -16,8 +16,7 @@ Diskuplog="$YmdHMS"-log.txt
  
 mkdir -p $FileDir
  
-if [$M -eq 10]; then
-    if [$D -eq 28]; then
+if [$M -eq 10] && [$D -eq 28]; then
         echo ---- HAPPY BIRTHDAY ---- >> $FileDir/$Diskuplog
 fi
 
