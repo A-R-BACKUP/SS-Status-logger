@@ -15,10 +15,6 @@ FileDir="$HomeDir/Seoul-Server-Status-log/$Ymd"
 Diskuplog="$YmdHMS"-log.txt
  
 mkdir -p $FileDir
- 
-if [$M -eq 10] && [$D -eq 28]; then
-        echo ---- HAPPY BIRTHDAY ---- >> $FileDir/$Diskuplog
-fi
 
 echo "### $YmdHMS Status" >> $FileDir/$Diskuplog
 echo ----- UPTIME ----- >> $FileDir/$Diskuplog
